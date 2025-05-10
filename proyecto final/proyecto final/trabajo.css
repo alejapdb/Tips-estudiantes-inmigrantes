@@ -1,0 +1,311 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-image: url('fondo_tramites.jpg');
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    color: white;
+    padding: 0px;
+    text-align: none;
+    opacity: 0.8;
+    height: 350px;
+}
+.menu {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.74);
+    opacity: 1;
+    font-weight: bold;
+}
+
+.menu li {
+    position: relative;
+    margin: 10px;
+}
+
+.menu a {
+    color: white;  
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.submenu{
+    display: flex;
+    align-items: end;
+}
+
+
+.submenu .desplegar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 54;
+}
+
+.submenu .desplegar li {
+    padding: 10px;
+}
+
+.submenu .desplegar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.submenu:hover .desplegar {
+    display: block;
+}
+/*contenedor*/
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* CONTENIDO */
+.tramite-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tramite-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.tramite-card h3 {
+    margin: 0;
+    color: #004080;
+}
+
+.tramite-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.tramite-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.tramite-card ul li {
+    margin: 5px 0;
+    color: #555;
+}
+
+.tramite-card a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tramite-card a:hover {
+    text-decoration: underline;
+}
+
+/* MAs sobre via en madrid  */
+.box-enlaces {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#titulo{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+.enlace {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.enlace:hover {
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.enlace img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.enlace h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.enlace p {
+    font-size: 14px;
+    color   : #666;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.enlace a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#info{
+    color: #0040ca;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .submenu .desplegar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: black;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 54; 
+    }
+
+    .submenu:hover .desplegar {
+        display: block;
+    }
+
+    .submenu:active .desplegar {
+        display: block;
+    }
+    
+    .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section ul {
+        margin-left: 20px;
+    }
+    
+    .section ul li {
+        margin-bottom: 10px;
+    }
+    /* contenido */
+    .tramite-card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+    
+    .tramite-card img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+    
+    .tramite-card h3 {
+        margin: 0;
+        color: #004080;
+    }
+    
+    .tramite-card p {
+        margin: 10px 0;
+        color: #555;
+    }
+    
+    .tramite-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+    
+    .tramite-card ul li {
+        margin: 5px 0;
+        color: #555;
+    }
+    
+    .tramite-card a {
+        color: #004080;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .tramite-card a:hover {
+        text-decoration: underline;
+    }
+
+   
+}

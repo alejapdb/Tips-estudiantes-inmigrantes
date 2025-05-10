@@ -1,0 +1,149 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-image: url('fondo.jpg');
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    color: white;
+    padding: 0px;
+    text-align: none;
+    opacity: 0.8;
+    height: 350px;
+}
+.menu {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.74);
+    opacity: 1;
+    font-weight: bold;
+}
+
+.menu li {
+    position: relative;
+    margin: 10px;
+}
+
+.menu a {
+    color: white;  
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.submenu{
+    display: flex;
+    align-items: end;
+}
+
+
+.submenu .desplegar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 54;
+}
+
+.submenu .desplegar li {
+    padding: 10px;
+}
+
+.submenu .desplegar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.submenu:hover .desplegar {
+    display: block;
+}
+/*contenedor*/
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Estilos para el formulario */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group div {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+/* Estilos generales para inputs, select y textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.checkbox-group div {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
